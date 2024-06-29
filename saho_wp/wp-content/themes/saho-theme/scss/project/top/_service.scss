@@ -1,0 +1,124 @@
+.service {
+    .c-sectionTitle{
+        &__ttl::before{
+          content: '';
+          background: #fff;
+        }
+        &__ttl::after{
+            content: '事業案内';
+            color: #fff;
+        }
+        &__ttl--ja{
+            color: #fff;
+        }
+    }
+    .l-section{
+        padding: 100px 20px 50px;
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        &--gray {
+            background-color: #5B5B5D;
+        }
+        &--white {
+            background-color: #FFFFFF;
+
+        }
+    }
+    &__list {
+        display: block;
+        width: 20%;
+        &__info{
+            max-width: 239px;
+            max-height: 100%;
+            margin:0px 0 30px;
+        }
+            &__logo {
+                display: block;
+                margin: 50px auto 0;
+                img{
+                    width: 75px;
+                    height: 75px;
+                }
+            }
+            &__name {
+                font-size: 22px;
+                color: #FFFFFF;
+                font-family: Oswald;
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+                padding: 12px 0;
+                &--white {
+                    font-size: 22px;
+                    color: #000000;
+                }
+            }
+            &__text {
+                font-weight: normal;
+                font-size: 12px;
+                letter-spacing: 0.15em;
+                line-height: 18px;
+                text-align: center;
+                color: #FFFFFF;
+                &--white {
+                    color: #000000;
+                }
+            }
+    }
+}
+
+
+
+@media screen and (max-width:499px) {
+    .service {
+        .l-section{
+            padding: 50px 20px 50px;
+        }
+        &__lists {
+            display: block;
+            justify-content: start;
+        }
+        &__list {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: 140px;
+            margin-bottom: 20px;
+            &__info{
+                max-width: 239px;
+                max-height: 100%;
+                margin:auto 0 auto 40px;
+            }
+            &__logo {
+                display: block;
+                margin: 0;
+                img{
+                    width: auto;
+                    height: 75px;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+            &__name {
+                width: 136px;
+                font-size: 20px;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                padding: 0px 0 10px;
+                &--white {
+                    font-size: 20px;
+                    color: #000000;
+                }
+            }
+            &__text {
+            }
+        }
+        &__list:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

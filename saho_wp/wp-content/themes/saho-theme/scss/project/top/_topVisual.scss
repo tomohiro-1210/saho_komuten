@@ -1,0 +1,85 @@
+.topVisual {
+    background-image: url(../img/top/topVisual.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    padding: 0 20px;
+    &__logo{
+        height: 40px;
+        width: 320px;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+    }
+    &__info {
+        position: absolute;
+        top: 50%;
+        left: 84px;
+        transform: translateY(-50%);
+        &__catch{
+            font-weight: 600;
+            font-size: 58px;
+            letter-spacing: 0.05em;
+            line-height: 1.5;
+            text-align: left;
+            color: #fff;            
+        }
+        &__sub-catch{
+            font-family: "BIZ UDPGothic";
+            font-size: 22px;
+            letter-spacing: 0.2em; 
+            text-align: left;
+            color: #fff;
+            margin-bottom: 38px;  
+        }
+        &__txt{
+            font-family: "BIZ UDPGothic";
+            font-size: 16px;
+            letter-spacing: 0.2em;
+            line-height: 1.75;
+            text-align: left;
+            color: #fff;
+        }
+    }
+    .menu-tirgger{
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:499px) {
+    .topVisual {
+        background-position: center;
+        height: 100vh;
+        &__logo{
+            height: 26px;
+            width: 200px;
+            top: 15px;
+            left: 20px;
+        }
+        &__info {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            &__catch{
+                font-size: 30px;  
+                margin-bottom: 30px;       
+            }
+            &__sub-catch{
+                font-size: 20px;
+                margin-bottom: 20px;  
+            }
+            &__txt{
+                line-height: 1.5;
+                margin-top: 0px;
+            }
+        }
+    }
+}

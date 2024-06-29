@@ -1,0 +1,71 @@
+html{
+    font-size: 10px;
+    color: #333;
+    overflow-x: hidden;
+    font-family: "BIZ UDPGothic";
+}
+.cl-green{
+    color: #0088a2;
+}
+img{
+    width: 100%;
+    vertical-align: bottom;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.font{
+    font-family: Oswald;
+}
+.pc-on{
+    display: block;
+}
+.sp-on{
+    display: none;
+}
+// 背景色
+.bg-black{
+    background-color: #1B1B1D;
+}
+.bg-darkgray{
+    background-color: #39393C;
+}
+.bg-gray{
+    background-color: #5B5B5D;
+}
+
+
+
+@media screen and (max-width:499px) {
+    .pc-on{
+        display: none;
+    }
+    .sp-on{
+        display: block;
+    }
+
+    // メニュー
+    .menu-tirgger{
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        &__wrap{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        span{
+            width: 40px;
+            height: 2px;
+            background: #000;
+            display: block;
+        }
+        span:nth-child(2n){
+            margin: 10px 0;
+        }
+    }
+}

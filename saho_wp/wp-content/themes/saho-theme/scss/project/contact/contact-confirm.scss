@@ -1,0 +1,168 @@
+// お問い合わせ確認画面
+.contact-confirm {
+    max-width: 1000px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+    &__table {
+        width: 100%;
+        border: 2px solid #1B1B1D;
+        margin-bottom: 50px;
+    }
+    
+    /* アイテム */
+    &__item {
+        border-bottom: 2px solid #D5D5D5;
+    }
+    &__item:last-child {
+        border-bottom: none;
+        .contact-confirm__title, 
+        .contact-confirm__text {
+            padding: 60px 50px 55px 50px;
+        }
+    }
+    
+    &__title,
+    &__text {
+        padding: 52px 0px 52px 52px;
+        
+    }
+    &__title {
+        width: 23%;
+        text-align: left;
+        background-color: #1B1B1D;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: left;
+        color: #fff;
+    }
+    &__text {
+        width: 77%;
+        font-size: 19px;
+        letter-spacing: 0.15em;
+        line-height: 30px;
+        text-align: left;
+        color: #000;
+        &--tel{
+            margin-right: 10px;
+        }
+        &--tel:last-child{
+            margin-right: 0px;
+        }
+        &--line{
+            display: block;
+            width: 15px;
+            margin-right: 10px;
+            height: 1px;
+            background-color: #000;
+        }
+    }
+    &__text.flex {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+    
+    &__buttons {
+        display: flex;
+        justify-content: center;
+    }
+    &__button:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    /* フォームリセット ボタン */
+    &__riset-submit {
+        display: block;
+        width: 475px;
+        font-weight: bold;
+        padding: 33px 0;
+        font-size: 28px;
+        line-height: 28px;
+        color: #fff;
+        background-color: #8A8A8A;
+        cursor: pointer;
+        border: none;
+    }
+    &__riset-submit:hover {
+        color: #8A8A8A;
+        background-color: #fff;
+        border: solid #8A8A8A 2px;
+    }
+    
+    /* ボタン */
+    &__submit-primary {
+        color: #fff;
+        background-color: #000;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    //お問い合わせ確認画面
+.contact-confirm {
+    margin: 0 auto 50px;
+    &__table {
+        border: solid 2px #8A8A8A;
+        display: block;
+        padding: 20px;
+    }
+    
+    /* アイテム */
+    &__item {
+        display: block;
+        border: none;
+        margin-bottom: 20px;
+    }
+    &__item:last-child {
+        border-bottom: none;
+        margin-bottom: 0px;
+        .contact-confirm__title{
+            padding: 0 0 20px;
+        } 
+        .contact-confirm__text {
+            padding: 0 0 0px;
+        }
+    }
+    
+    &__title,
+    &__text {
+        display: block;
+        padding: 0 0 20px 0;
+        
+    }
+    &__title {
+        width: auto;
+        font-size: 16px;
+        background-color: #fff;
+        color: #000;
+    }
+    &__text {
+        width: auto;
+        font-size: 16px;
+        line-height: 28px;
+        color: #000;
+    }
+    
+    // ボタン
+    &__button:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__riset-submit {
+        display: block;
+        width: 150px;
+        font-weight: bold;
+        padding: 15px 0;
+        font-size: 14px;
+        line-height: 14px;
+    }
+    &__riset-submit:hover {
+        color: #8A8A8A;
+        background-color: #fff;
+        border: solid #8A8A8A 2px;
+    }
+    &__submit-primary {
+        color: #fff;
+        background-color: #000;
+    }
+}
+}
+

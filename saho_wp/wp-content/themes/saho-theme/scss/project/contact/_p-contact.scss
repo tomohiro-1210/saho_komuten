@@ -1,0 +1,218 @@
+// conponent
+.c-sectionTitle{
+    &__ttl::before{
+      width: 50px;
+    }
+}
+
+.contact-info {
+    // contact
+    &__lists {
+        width: 100%;
+        margin: 100px auto 50px;
+    }
+    &__list {
+        margin-bottom: 100px;
+        &__text__tel {
+            font-weight: bold;
+            font-size: 38px;
+            line-height: 56px;
+            color: #000;
+            text-align: center;
+            margin-bottom: 9px;
+        }
+        
+        &__text__time {
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #000;
+            margin-bottom: 8px;
+        }
+        &__logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+        }
+        &__logo-line {
+            width: 60px;
+            height: 2px;
+            margin: 0 auto;
+            margin-bottom: 15px;
+            background-color: #DFE2E8;
+        }
+        &__mail {
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 0.15em;
+            text-align: center;
+            color: #000;
+        }
+    }
+    &__list:last-child{
+        margin-bottom: 0px;
+    }
+    
+    // caution
+    &__caution {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        border: solid #1B1B1D 2px;  
+        &__logo {
+            width: 7.2%;
+            position: relative;
+            background-color: #1B1B1D;
+            img{
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 38px;
+                height: 38px;
+            }
+        }
+        
+        &__txts {
+            width: calc(100% - 7.2%);
+        }
+        &__txt {
+            border-bottom: dotted #1B1B1D 2px;  
+            p{
+                padding: 33px;
+                font-size: 16px;
+                letter-spacing: 0.15em;
+                line-height: 24px;
+                text-align: left;
+                color: #000;
+                
+            }
+        }
+        &__txt:last-child {
+            border-bottom: none; 
+        }
+
+    }
+    
+   
+}
+
+ //フロー
+ .flow {
+    display: flex;
+    width: 343px;
+    margin: 100px auto 50px;
+    &__item {
+      display: flex;
+      align-items: center;
+    
+      &:not(:last-child) {
+        flex: 1;
+    
+        &:after {
+          content: "";
+          position: relative;
+          z-index: -1;
+          height: 2px;
+          background-color: #000000;
+          flex: 1;
+          width: 50px;
+        }
+      }
+    
+      &__wrapper {
+        padding: 17px 20px 20px;
+        border: solid 2px #000;
+      }
+      &__wrapper.page-now {
+          background-color: #1B1B1D;
+        }
+      &__title {
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: center;
+          color: #000;
+          margin-bottom: 4px;
+          
+      }
+      &__action {
+          font-weight: bold;
+          font-size: 16px;
+          letter-spacing: 0.15em;
+          text-align: center;
+          color: #000;
+      }
+      &__title.page-now {
+          color: #fff;
+      }
+      &__action.page-now {
+          color: #fff;
+      }
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .contact-info {
+        margin: 0 auto;
+        // contact
+        &__lists {
+            width: 100%;
+            margin: 50px auto;
+        }
+        &__list {
+            margin-bottom: 50px;
+            &__text__tel {
+                font-size: 30px;
+                line-height: 45px;
+                margin-bottom: 10px;
+            }
+            &__text__time {
+                margin-bottom: 10px;
+            }
+        }
+        
+        // caution
+        &__caution {
+            padding: 0;
+            width: calc(100% - 40px);
+            border: solid #1B1B1D 2px;  
+            &__logo {
+                width: 15%;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            
+            &__txts {
+                width: calc(100% - 15%);
+            }
+            &__txt {
+                p{
+                    padding: 15px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    
+                }
+            }
+            &__txt:last-child {
+                border-bottom: none; 
+            }
+    
+        }
+        
+       
+    }
+
+     //フロー
+ .flow {
+    margin: 50px auto;
+    }
+
+}
